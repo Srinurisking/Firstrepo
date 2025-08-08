@@ -1,0 +1,23 @@
+steps to tackle the build executor error:
+
+/tmp have less storage in order to tackle the storage issue
+
+we have to create a temp file in home directory like below
+
+sudo mkdir /home/mytmp
+
+next give permissions same like /tmp which is chmod 1777
+
+sudo chmod 1777 /home/mytmp
+
+Now attach this mytmp to the /tmp so whenever the tmp required space it will take from the home directory or root
+
+sudo mount --bind /home/mytmp /tmp
+
+Optional : make the change permanent so it will survive even system got reboots
+
+sudo nano /etc/fstab
+
+Add this line at the bottom 
+
+/home/mytmp /tmp none bind 0 0 and save and exit ctrl+X and enter
