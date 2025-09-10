@@ -1,2 +1,3 @@
 sudo dnf update -y
 sudo dnf install mariadb105  <!--mysql clinet command line will create from mariba on amazon linux cli to connect to the mysql db from ec2-instance to the clinet command line of mysql--!>
+mysql -h endpoint -p 3306 -u admin -p <!-- endpoint url of rds mysql server this will connect with the rds service privately--!>
