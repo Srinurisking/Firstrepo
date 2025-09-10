@@ -1,0 +1,2 @@
+sudo dnf update -y
+sudo dnf install mariadb105  <!--mysql clinet command line will create from mariba on amazon linux cli to connect to the mysql db from ec2-instance to the clinet command line of mysql--!>
